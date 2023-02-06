@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c0c0c0;
+}
+
+main {
+  width: 50%;
+  border: 2px solid gold;
+  padding: 30px;
+  text-align: center;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 50%;
+}
+
+.color-output {
+  text-align: center;
+}

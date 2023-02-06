@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Guess Color Game</title>
+  </head>
+  <body>
+    <main>
+      <summary>
+        <p>P1: <span class="player-point-1">0</span></p>
+        <p>P2: <span class="player-point-2">0</span></p>
+      </summary>
+      <header>
+        <h1>GCG</h1>
+        <div class="winner">Winner</div>
+      </header>
+      <section>
+        <!-- Player 1 side -->
+        <aside>
+          <p>Player 1</p>
+          <input
+            type="text"
+            placeholder="type color in lower case"
+            class="input-1"
+          />
+          <button class="btn-1">save</button>
+          <p class="color-1"></p>
+        </aside>
+        <!-- Player 2 side -->
+        <aside>
+          <p>Player 2</p>
+          <input
+            type="text"
+            placeholder="type color in lower case"
+            class="input-2"
+          />
+          <button class="btn-2">save</button>
+          <p class="color-2"></p>
+        </aside>
+      </section>
+      <footer>
+        <p class="color-output">Output</p>
+      </footer>
+      <button class="start">START</button>
+    </main>
+    <!-- <button class="btn">Test</button> -->
+    <script src="./main.js"></script>
+  </body>
+</html>
