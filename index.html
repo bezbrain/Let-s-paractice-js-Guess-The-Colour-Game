@@ -9,8 +9,8 @@
   <body>
     <main>
       <summary>
-        <p>P1: <span class="player-point-1">0</span></p>
-        <p>P2: <span class="player-point-2">0</span></p>
+        <h2>P1: <span class="player-point-1">0</span></h2>
+        <h2>P2: <span class="player-point-2">0</span></h2>
       </summary>
       <header>
         <h1>GCG</h1>
@@ -18,33 +18,42 @@
       </header>
       <section>
         <!-- Player 1 side -->
-        <aside>
+        <form>
           <p>Player 1</p>
           <input
             type="text"
-            placeholder="type color in lower case"
+            placeholder="Type color in lowercase"
             class="input-1"
           />
           <button class="btn-1">save</button>
           <p class="color-1"></p>
-        </aside>
+        </form>
         <!-- Player 2 side -->
-        <aside>
+        <form>
           <p>Player 2</p>
           <input
             type="text"
-            placeholder="type color in lower case"
+            placeholder="Type color in lowercase"
             class="input-2"
           />
           <button class="btn-2">save</button>
           <p class="color-2"></p>
-        </aside>
+        </form>
       </section>
-      <footer>
+      <div class="output-con">
         <p class="color-output">Output</p>
-      </footer>
-      <button class="start">START</button>
+      </div>
+      <button class="start" title="start the game before saving your input">
+        START
+      </button>
+      <a
+        href="./about.html"
+        target="_blank"
+        title="Read about how game is played"
+        >About Game</a
+      >
     </main>
+    <img src="./Cup_image.png" alt="cup" />
     <!-- <button class="btn">Test</button> -->
     <script src="./main.js"></script>
   </body>
