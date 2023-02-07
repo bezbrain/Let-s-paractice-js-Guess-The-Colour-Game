@@ -47,8 +47,6 @@ section {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-  /* width: 70%; */
-  /* border: 2px solid red; */
 }
 
 form p:first-child {
@@ -153,5 +151,11 @@ img {
 
   .winner {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  main {
+    width: 90%;
   }
 }
