@@ -11,10 +11,6 @@ body {
   background-color: #c0c0c0;
   font-family: "Courier New", Courier, monospace;
 }
-.winner-body-background {
-  background: url("https://thumbs.dreamstime.com/b/vector-glowing-backgroud-you-re-winner-congratulations-concept-shining-lottery-balls-stars-dark-backdrop-120481200.jpg");
-  /* z-index: 20; */
-}
 
 main {
   width: 70%;
@@ -40,7 +36,7 @@ h1 {
 .winner {
   font-weight: 900;
   font-size: 20px;
-  color: rgb(146, 133, 56);
+  color: rgb(46, 42, 17);
 }
 
 section {
@@ -130,19 +126,6 @@ img {
   }
 }
 
-/* .img {
-  animation: shine 0.5s linear infinite;
-}
-
-@keyframes shine {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
 @media screen and (min-width: 900px) {
   section {
     width: 90%;
@@ -158,4 +141,23 @@ img {
   main {
     width: 90%;
   }
+}
+
+/* ======= */
+/* About Page CSS */
+/* ======= */
+.main-div {
+  border: 2px solid wheat;
+  width: 70%;
+  padding: 40px 100px 40px;
+}
+
+li {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+h3 {
+  margin-top: 30px;
+  text-align: justify;
 }

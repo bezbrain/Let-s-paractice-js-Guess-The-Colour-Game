@@ -83,7 +83,7 @@ function interchange() {
 
 // Disable save btn when game is over
 const disableSaveBtn = () => {
-  if (btnOneCounter >= 3 && btnTwoCounter >= 3) {
+  if (btnOneCounter >= 10 && btnTwoCounter >= 10) {
     btnOne.setAttribute("disabled", true);
     btnTwo.setAttribute("disabled", true);
   }
@@ -91,7 +91,7 @@ const disableSaveBtn = () => {
 
 // Display of Player of the winner of the game
 function playerOneTwo() {
-  if (btnTwoCounter === 3) {
+  if (btnTwoCounter === 10) {
     if (resultTwo > resultOne) {
       winner.textContent = "Player 2 is the Winner";
     } else {
@@ -127,7 +127,7 @@ startGame.onclick = () => {
 function winnerCup() {
   if (
     winner.textContent.includes("Player 1 is the Winner") ||
-    winner.textContent.includes("Player 1 is the Winner")
+    winner.textContent.includes("Player 2 is the Winner")
   ) {
     winnerImgage.classList.add("winner-class");
     // document.body.classList.add("winner-body-background");
