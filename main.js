@@ -1,6 +1,7 @@
 const allColors = ["red", "blue", "green"];
 
-// const mainContainer = document.querySelector("main");
+const preTitle = document.querySelector("pre");
+const mainContainer = document.querySelector("main");
 const playerPointOne = document.querySelector(".player-point-1");
 const playerPointTwo = document.querySelector(".player-point-2");
 const btnOne = document.querySelector(".btn-1");
@@ -14,6 +15,15 @@ const winner = document.querySelector(".winner");
 const startGame = document.querySelector(".start");
 const winnerImgage = document.querySelector("img");
 const startInstrucion = document.querySelector("main > p");
+
+// Display of game name before displaying the game itself
+window.addEventListener("DOMContentLoaded", function () {
+  mainContainer.style.display = "none";
+  setTimeout(() => {
+    mainContainer.style.display = "block";
+    preTitle.style.display = "none";
+  }, 3000);
+});
 
 let btnOneCounter = 0;
 let btnTwoCounter = 0;
