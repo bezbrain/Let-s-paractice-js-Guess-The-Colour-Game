@@ -13,14 +13,23 @@ body {
 }
 
 main {
-  width: 70%;
+  width: 60%;
   /* border: 2px solid red; */
   border-radius: 15px;
   padding: 30px;
   text-align: center;
   background-color: rgb(119, 113, 79);
-  box-shadow: 5px 0px 6px 6px red, 0px 6px 5px 5px red, 6px 5px 0px 0px red,
-    6px 5px 5px 5px red;
+}
+@media screen and (max-width: 900px) {
+  main {
+    width: 600px;
+  }
+}
+
+main > p {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 summary {
@@ -30,7 +39,8 @@ summary {
 
 h1 {
   font-size: 10vw;
-  text-shadow: 3px 4px 0px red;
+  color: #4f7771;
+  text-shadow: 3px 4px 0px #000;
 }
 
 .winner {
@@ -56,6 +66,22 @@ input {
   height: 30px;
   background-color: grey;
 }
+@media screen and (max-width: 600px) {
+  input {
+    width: 100px;
+  }
+  form:first-child {
+    margin-right: 20px;
+  }
+  main > p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  input {
+    width: 250px;
+  }
+}
 
 input::placeholder {
   font-size: 12px;
@@ -74,20 +100,35 @@ form button:hover {
   background-color: rgb(170, 145, 117);
 }
 
+.color-1,
+.color-2 {
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.7;
+}
+
 .output-con {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .output-con p {
-  width: 80px;
-  border: 2px solid black;
+  border: 1px solid black;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 25px;
+  padding: 5px 10px;
+}
+@media screen and (max-width: 600px) {
+  .output-con p {
+    font-size: 5vw;
+  }
 }
 
 .start {
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 10px 15px;
   border-radius: 8px;
   border: none;
@@ -103,6 +144,15 @@ a {
   position: fixed;
   top: 20px;
   right: 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #4f7771;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: ease 0.5s all;
+}
+a:hover {
+  background-color: #739490;
 }
 
 img {
@@ -141,23 +191,4 @@ img {
   main {
     width: 90%;
   }
-}
-
-/* ======= */
-/* About Page CSS */
-/* ======= */
-.main-div {
-  border: 2px solid wheat;
-  width: 70%;
-  padding: 40px 100px 40px;
-}
-
-li {
-  margin-top: 20px;
-  text-align: justify;
-}
-
-h3 {
-  margin-top: 30px;
-  text-align: justify;
 }

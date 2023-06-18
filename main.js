@@ -13,6 +13,7 @@ const colorOutput = document.querySelector(".color-output");
 const winner = document.querySelector(".winner");
 const startGame = document.querySelector(".start");
 const winnerImgage = document.querySelector("img");
+const startInstrucion = document.querySelector("main > p");
 
 let btnOneCounter = 0;
 let btnTwoCounter = 0;
@@ -75,15 +76,21 @@ function interchange() {
   if (btnOneCounter <= btnTwoCounter) {
     btnTwo.setAttribute("disabled", true);
     btnOne.removeAttribute("disabled");
+    btnOne.style.backgroundColor = "#4F7771";
+    btnTwo.style.backgroundColor = "grey";
   } else {
     btnTwo.removeAttribute("disabled");
     btnOne.setAttribute("disabled", true);
+    btnOne.style.backgroundColor = "grey";
+    btnTwo.style.backgroundColor = "#4F7771";
   }
 }
 
 // Disable save btn when game is over
 const disableSaveBtn = () => {
   if (btnOneCounter >= 10 && btnTwoCounter >= 10) {
+    startGame.textContent = "START";
+    startInstrucion.textContent = "Click the START button to start game";
     btnOne.setAttribute("disabled", true);
     btnTwo.setAttribute("disabled", true);
   }
@@ -104,6 +111,8 @@ function playerOneTwo() {
 }
 
 startGame.onclick = () => {
+  startGame.textContent = "RESTART";
+  startInstrucion.textContent = "Game is on";
   btnOne.removeAttribute("disabled");
   btnTwo.removeAttribute("disabled");
   resultOne = 0;
