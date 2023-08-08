@@ -15,6 +15,6 @@ To start the game:
 
 ### Summary
 
-Visit the web app and click "About Game" to know more about the game and play with your friend
+Visit the web app and click **About Game** to know more about the game and play with your friends.
 
 You can visit the finished work [here](https://guesscolorgamegcg.netlify.app/)
